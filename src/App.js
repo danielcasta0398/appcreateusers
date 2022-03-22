@@ -43,6 +43,7 @@ function App() {
 
   return (
     <div >
+        <HeadTop estado={stateModal} cambiarestado={ setEstateModal } setTextButton = {setTextButton} /> 
         <Delete estadoDelete={stateDelete} cambiarEstadoDelete= {setStateDelete} remove= {remove} /> 
         <ModalUpdate 
           stateEdit={stateEdit}
@@ -56,8 +57,7 @@ function App() {
             cambiarestado={ setEstateModal } 
             getuser={getUser}             
             textButton = {textButton}
-        />   
-        <HeadTop estado={stateModal} cambiarestado={ setEstateModal } setTextButton = {setTextButton} /> 
+        />           
         <UsersList 
           userlist = {userList} 
           estadoDelete={stateDelete} 

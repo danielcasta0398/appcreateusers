@@ -6,8 +6,16 @@
 
 
 
+
 .head{  
+  position: fixed;
   display: flex;
+  width: 100%;
+  height: 70px;
+  top: 0;
+  left: 0;
+  right: 0;
+  background-color: #f7f8f9;
   justify-content: space-between;  
   align-items: center;
   padding: 20px;
@@ -53,6 +61,7 @@
   height: 100vh;  
   z-index: 5;
 }
+
 
 
 .modal-background{
@@ -194,15 +203,15 @@ input::-webkit-calendar-picker-indicator {
 }
 
 .containt-user-list{ 
-margin-top: 2rem;
+
 margin-bottom: 2rem;
  
 }
 
 
-
 .content-card-user{
-  margin: 0 20px;
+  margin: 0 20px;  
+  margin-top: 90px;
   max-width: 100%;
   display: grid;  
   grid-template-columns: repeat(3 , 1fr);
@@ -211,7 +220,7 @@ margin-bottom: 2rem;
 
 .content-card-user > div{
   margin: auto; 
-  margin-bottom: 0px;
+  margin-bottom: 0px;  
   list-style: none;
   width: 100%;
   max-width: 100%; 
@@ -386,9 +395,7 @@ margin-bottom: 2rem;
 
 @media (max-width: 400px) {
   
-  .head{
-  
-  }
+
   
 
   .name {
